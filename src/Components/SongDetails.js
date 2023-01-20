@@ -22,6 +22,7 @@ function SongDetails() {
       })
       .catch((c) => console.error("catch", c));
   };
+
   const handleDelete = () => {
     deleteSong();
   };
@@ -33,13 +34,12 @@ function SongDetails() {
         </h3>
         <h5>
           <span>
-            <a href>{song.name}</a>
+            <a>{song.name}</a>
           </span>{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           {song.artist}
         </h5>
         <h6>{song.time}</h6>
-        {/* <p>{song.description}</p> */}
         <div className="showNavigation">
           <div>
             {" "}

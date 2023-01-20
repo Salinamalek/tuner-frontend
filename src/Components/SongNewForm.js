@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 const API = process.env.REACT_APP_API_URL;
 
-function SongNewForm() {
+function SongNewForm({ id }) {
   let navigate = useNavigate();
 
   const addSong = (newSong) => {
@@ -55,8 +55,6 @@ function SongNewForm() {
         <input
           id="artist"
           type="text"
-          //   pattern="http[s]*://.+"
-          //   required
           value={song.artist}
           placeholder="Name of Artist"
           onChange={handleTextChange}
@@ -82,9 +80,9 @@ function SongNewForm() {
 
         <input type="submit" />
       </form>
-      {/* <Link to={`/songs/${id}`}>
+      <Link to={`/songs/${id}`}>
         <button>Nevermind!</button>
-      </Link> */}
+      </Link>
     </div>
   );
 }
