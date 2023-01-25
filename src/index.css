@@ -14,13 +14,17 @@ nav {
   padding: 1em;
   box-shadow: 2px 2px 4px grey;
   margin-bottom: 1em;
+  border-radius: 20px;
 }
 
 main {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
+  width: 90%;
   margin: auto;
   background-color: rgb(245, 205, 205);
+  padding: 10px;
+  border-radius: 20px;
 }
 
 a {
@@ -53,6 +57,10 @@ tbody td:not(td:first-of-type):hover {
 
 tbody tr:nth-child(even) {
   background: #f4eafd;
+}
+
+tbody tr:nth-child(odd) {
+  background: #e89cc9;
 }
 
 .New {
